@@ -17,7 +17,7 @@ resource "aws_default_security_group" "default" {
 }
 
 resource "aws_security_group" "public_ssh" {
-  name        = "public_ssh"
+  name = "public_ssh"
 
   vpc_id = aws_vpc.main.id
 
@@ -38,7 +38,7 @@ resource "aws_security_group" "public_ssh" {
   tags = {
     Provisioner = "terraform"
     Project     = var.project_name
-    Name = "public_ssh"
+    Name        = "public_ssh"
   }
 }
 

@@ -15,7 +15,7 @@ resource "aws_instance" "bastion" {
   tags = {
     Provisioner = "terraform"
     Project     = var.project_name
-    Name = "bastion"
+    Name        = "bastion"
   }
 }
 
@@ -26,6 +26,6 @@ resource "aws_eip" "bastion" {
   tags = {
     Provisioner = "terraform"
     Project     = var.project_name
-    Name = "bastion"
+    Name        = "bastion"
   }
 }

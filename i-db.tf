@@ -14,6 +14,6 @@ resource "aws_instance" "db" {
   tags = {
     Provisioner = "terraform"
     Project     = var.project_name
-    Name = "db"
+    Name        = "db"
   }
 }
