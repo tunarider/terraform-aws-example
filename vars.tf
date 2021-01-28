@@ -1,3 +1,6 @@
+variable "region" {
+  type = string
+}
 
 variable "primary_az" {
   type = string
