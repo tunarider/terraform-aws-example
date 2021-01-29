@@ -1,3 +1,5 @@
+profile = "aws-example"
+
 region       = "ap-northeast-2"
 primary_az   = "ap-northeast-2a"
 secondary_az = "ap-northeast-2b"
