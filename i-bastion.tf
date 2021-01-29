@@ -29,3 +29,11 @@ resource "aws_eip" "bastion" {
     Name        = "bastion"
   }
 }
+
+resource "aws_route53_record" "bastion" {
+  zone_id = aws_route53_zone.example_internal.id
+  name    = "bastion.example.internal"
+  type    = "A"
+  ttl     = "300"
+  records = [aws_instance.bastion.private_ip]
+}
