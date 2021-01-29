@@ -22,6 +22,10 @@ output "private_secondary_subnet_id" {
   value = aws_subnet.private_secondary.id
 }
 
+output "default_security_group_id" {
+  value = aws_default_security_group.default.id
+}
+
 output "public_ssh_security_group_id" {
   value = aws_security_group.public_ssh.id
 }

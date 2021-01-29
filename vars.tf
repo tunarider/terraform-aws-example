@@ -38,6 +38,10 @@ variable "private_secondary_cidr" {
   type = string
 }
 
-variable "public_key" {
+variable "public_key_default" {
+  type = string
+}
+
+variable "public_key_bastion" {
   type = string
 }

@@ -2,7 +2,7 @@ resource "aws_instance" "bastion" {
   ami               = "ami-09282971cf2faa4c9"
   availability_zone = var.primary_az
   instance_type     = "t2.nano"
-  key_name          = aws_key_pair.default.key_name
+  key_name          = aws_key_pair.bastion.key_name
 
   vpc_security_group_ids = [
     aws_default_security_group.default.id,
