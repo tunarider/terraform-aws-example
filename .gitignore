@@ -33,4 +33,4 @@ override.tf.json
 
 # End of https://www.toptal.com/developers/gitignore/api/terraform
 
-i-db.tf
+50-instance_db.tf
